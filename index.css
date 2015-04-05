@@ -1,13 +1,37 @@
-#menu {
+div.menu {
  margin: 0;
  padding: 4px;
 }
-#menu li {
- display: inline;
- margin-right: 5px;
- padding: 3px;
+ul.menu ul.dropmenu {
+	list-style-type: none;
+ 	padding: 0;
+}
+ul.dropmenu {
+	display: none;
+}
+ul.menu li.submenu {
+	display: inline;
+ 	float: left;
+ 	margin: 0 1px 0 0;
 }
 
-.sublist {
-    display: none;
+ul.menu li.submenu a {
+	padding: 3px 10px 4px;
+ 	display: block;
+}
+
+ul.menu a.submenu {
+	background: #efefef;
+}
+
+ul.menu li.submenu:hover .dropmenu {
+	display: block;
+}
+
+ul.menu .dropdown {
+	background: #fff;
+}
+
+ul.menu .dropdown a:hover {
+	background: #efefef;
 }
