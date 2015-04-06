@@ -1,6 +1,9 @@
 div.menu {
-    width: 80%;
-    margin: 10% 0%;
+    font-size: 3em;
+    font-family: 'PT Sans', sans-serif;
+    position:fixed;
+    width: 90%;
+    margin: 0% 5%;
     padding: 4px;
 }
 ul.menu ul.dropmenu {
@@ -25,6 +28,11 @@ ul.menu a.submenu {
 	background: #efefef;
 }
 
+ul.menu a.submenu:hover {
+    background: #a3a3a3;
+}
+
+
 ul.menu li.submenu:hover .dropmenu {
 	display: block;
 }
@@ -35,4 +43,13 @@ ul.menu .dropdown {
 
 ul.menu .dropdown a:hover {
 	background: #efefef;
+}
+
+li.submenu{
+    width:33%;
+}
+
+a, a:link, a:visited{
+    text-decoration: none;
+    color:#000000;
 }
