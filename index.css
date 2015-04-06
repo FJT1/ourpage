@@ -1,6 +1,7 @@
 div.menu {
- margin: 0;
- padding: 4px;
+    width: 80%;
+    margin: 10% 0%;
+    padding: 4px;
 }
 ul.menu ul.dropmenu {
 	list-style-type: none;
