@@ -1,0 +1,39 @@
+div.paragraph {
+	display: block;
+	min-height:60vh;
+	max-height: 90vh;
+	
+}
+
+.top-paragraph{
+	height: 90vh;
+}
+
+.page {
+	display: block;
+	width: auto;
+	background-color: white;
+}
+
+.paragraph:nth-child(odd) {
+	background-color: black;
+	color: white;
+}
+
+h2.paragraph-name {
+	text-align: center;
+	padding-top: 30px;
+}
+
+div.arrow {
+	background-image: url("img/arrow.png");
+	height: 64px;
+	width: 64px;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin: 0 -32px;
+}
+div.arrow:hover {
+	background-image: url("img/arrowhover.png");
+}

@@ -1,55 +1,111 @@
-div.menu {
-    font-size: 3em;
-    font-family: 'PT Sans', sans-serif;
-    position:fixed;
-    width: 90%;
-    margin: 0% 5%;
-    padding: 4px;
-}
-ul.menu ul.dropmenu {
-	list-style-type: none;
- 	padding: 0;
-}
-ul.dropmenu {
-	display: none;
-}
-ul.menu li.submenu {
-	display: inline;
- 	float: left;
- 	margin: 0 1px 0 0;
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+*, *:before, *:after{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
 }
 
-ul.menu li.submenu a {
-	padding: 3px 10px 4px;
- 	display: block;
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
+  border: 1px solid rgba(0,0,0,.1);
 }
 
-ul.menu a.submenu {
-	background: #efefef;
+nav ul{
+    list-style: none;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    display: inline-table;
 }
 
-ul.menu a.submenu:hover {
-    background: #a3a3a3;
+nav ul li{
+      float: left;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
 }
 
-
-ul.menu li.submenu:hover .dropmenu {
-	display: block;
+nav ul li:hover{
+    background: rgba(0,0,0,.15);
 }
 
-ul.menu .dropdown {
-	background: #fff;
+nav ul li:hover > ul{
+    display: block;
 }
 
-ul.menu .dropdown a:hover {
-	background: #efefef;
+nav ul li{
+    float: left;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-li.submenu{
-    width:33%;
-}
-
-a, a:link, a:visited{
+nav ul li a{
+    display: block;
+    padding: 30px 20px;
+    color: #222;
+    font-size: .9em;
+    letter-spacing: 1px;
     text-decoration: none;
-    color:#000000;
+    text-transform: uppercase;
+}
+
+nav ul ul{
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+nav ul ul li{
+    float: none;
+    position: relative;
+}
+nav ul ul li a{
+    padding: 15px 30px;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top:0;
+}
+
+a#mobileLabel{
+    display:none;
+    text-align:center;
+    color: #222;
+    font-size: .9em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width : 560px){
+	ul {
+		display: none;
+	}
+
+	li {
+		disply:none;
+	}
+
+	ul li, li a {
+        display:none;
+	}
+    a#mobileLabel{
+        display:block;
+    }
 }
