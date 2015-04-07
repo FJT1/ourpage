@@ -2,21 +2,26 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <!--link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'-->
     <link rel="stylesheet" type="text/css" href="menu.css" />
     <link rel="stylesheet" type="text/css" href="page.css" />
 </head>
 <body>
-    <div class="menu">
-        <ul class="menu">
-            <li class="submenu"><a class="submenu" href="#aboutUs">Кто мы</a></li>
-            <li class="submenu"><a class="submenu" href="#whatWeCanDo">Что мы можем</a>
-                <ul class="dropmenu">
-                    <li><a href="#">Верстка</a></li>
-                    <li><a href="#">Поднятие сервера</a></li>
-                </ul>
-            </li>
-            <li class="submenu"><a class="submenu" href="#offer">Заказать сайт</a></li>
+    <div>
+        <nav role='navigation'>
+            <a id="mobileLabel">Label</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul>
+                        <li><a href="">Our team</a></li>
+                        <li><a href="">History</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
     </div>
     <div id="aboutUs" style="height:500px;background-color:red"></div>
     <div id="whatWeCanDo" style="height:500px;background-color:green"></div>
