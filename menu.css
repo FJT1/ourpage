@@ -14,7 +14,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 60px;
   background: #fff;
   box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
   border: 1px solid rgba(0,0,0,.1);
@@ -53,9 +53,9 @@ nav ul li{
 
 nav ul li a{
     display: block;
-    padding: 30px 20px;
+    padding: 20px 20px;
     color: #222;
-    font-size: .9em;
+    font-size: 16px;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
@@ -75,7 +75,7 @@ nav ul ul li{
     position: relative;
 }
 nav ul ul li a{
-    padding: 15px 30px;
+    padding: 22px 30px;
     border-bottom: 1px solid rgba(0,0,0,.05);
 }
 
@@ -86,10 +86,11 @@ nav ul ul ul {
 }
 
 a#mobileLabel{
+    padding: 20px 20px;
     display:none;
     text-align:center;
     color: #222;
-    font-size: .9em;
+    font-size: 15px;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
