@@ -16,11 +16,11 @@ div.paragraph {
 }
 
 h2.paragraph-name {
-	text-align: center;
-	padding-top: 50px;
-	font-family: "Courier New", Courier, monospace;
-	padding-top:30vh;
-	font-size: 3.5em;
+	text-align: right;
+	font-family: sans-serif;
+	padding-top: 70px;
+	padding-right: 30px;
+	font-size: 2em;
 	color: #333;
 }
 
@@ -30,6 +30,20 @@ h2.paragraph-name {
 
 .paragraph:nth-child(even) h2.paragraph-name {
 	color: #efefef;
+	text-align: left;
+	padding-right: 0px;
+	padding-left: 30px;
+}
+
+.top-paragraph h1.paragraph-name {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 3.5em;
+	padding-top: 30vh;
+}
+
+h3 {
+	color: #fff;
 }
 
 div.arrow {
@@ -37,7 +51,7 @@ div.arrow {
 	height: 64px;
 	width: 64px;
 	position: absolute;
-	bottom: 10px;
+	bottom: 30px;
 	left: 50%;
 	margin: 0 -32px;
 }
